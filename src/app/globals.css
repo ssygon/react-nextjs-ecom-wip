@@ -7,3 +7,36 @@
     text-wrap: balance;
   }
 }
+
+:root {
+  --max-width-container: 1200px;
+  --side-padding: 25px;
+  --side-padding-lg: 30px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns:
+  1fr
+  min(calc(100% - 2 * var(--side-padding)), 100%)
+  1fr;
+
+  @screen lg {
+    grid-template-columns:
+    1fr
+    min(calc(100% - 2 *var(--side-padding-lg)), 100%)
+    1fr;
+  }
+}
+
+.wrapper > * {
+  grid-column: 2;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--max-width-container);
+}
+
+.full-bleed {
+  grid-column: 1 / -1;
+}
