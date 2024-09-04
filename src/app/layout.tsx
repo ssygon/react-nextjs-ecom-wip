@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import NavBar from "@/app/components/NavBar/NavBar";
+import Footer from "@/app/components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "React NextJS E-Commerce",
@@ -13,7 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <NavBar />  
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
