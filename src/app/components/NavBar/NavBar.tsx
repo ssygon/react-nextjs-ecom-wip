@@ -2,6 +2,8 @@ import Link from "next/link"
 import IconLogo from "@/app/icons/logo.svg";
 import Menu from "@/app/components/Menu/Menu";
 import NavLinks from "@/app/components/NavLinks/NavLinks";
+import SearchBar from "../SearchBar/SearchBar";
+import NavIcons from "../NavIcons/NavIcons";
 
 const NavBar = () => {
   return (
@@ -15,11 +17,13 @@ const NavBar = () => {
       </div>
       {/* DESKTOP */}
       <div className="hidden h-full items-center gap-4 lg:flex">
-        <Link href="/">
-          <IconLogo width={120} height={38} />
-        </Link>
-        <div className="flex items-center gap-4 ml-auto">
+        <div className="w-full flex items-center justify-between">
+          <Link href="/">
+            <IconLogo width={120} height={38} />
+          </Link>
           <NavLinks />
+          <SearchBar />
+          <NavIcons />
         </div>
       </div>
     </div>
