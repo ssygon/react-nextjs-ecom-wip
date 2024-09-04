@@ -17,8 +17,8 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className="wrapper">
-          <header>
-            <NavBar />  
+          <header className="h-20 flex items-center justify-between">
+            <NavBar />
           </header>
           <main>
             {children}

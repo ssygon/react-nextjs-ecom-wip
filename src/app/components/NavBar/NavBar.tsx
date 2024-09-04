@@ -1,7 +1,12 @@
+import Link from "next/link"
+import IconLogo from '@/app/icons/logo.svg';
+
 const NavBar = () => {
   return (
     <>
-      NavBar
+      <Link href="/">
+        <IconLogo width={120} height={38} />
+      </Link>
     </>
   );
 };
