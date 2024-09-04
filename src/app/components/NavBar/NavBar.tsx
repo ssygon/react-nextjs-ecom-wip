@@ -5,16 +5,16 @@ import NavLinks from "@/app/components/NavLinks/NavLinks";
 
 const NavBar = () => {
   return (
-    <div className="h-20 relative">
+    <div className="navbar">
       {/* MOBILE */}
-      <div className="h-full flex items-center justify-between md:hidden">
+      <div className="h-full flex items-center justify-between lg:hidden">
         <Link href="/">
           <IconLogo width={120} height={38} />
         </Link>
         <Menu />
       </div>
       {/* DESKTOP */}
-      <div className="hidden h-full items-center gap-4 md:flex">
+      <div className="hidden h-full items-center gap-4 lg:flex">
         <Link href="/">
           <IconLogo width={120} height={38} />
         </Link>

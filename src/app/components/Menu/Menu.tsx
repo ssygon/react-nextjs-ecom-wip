@@ -12,7 +12,7 @@ const Menu = () => {
     <>
       <IconMenu width={30} height={30} viewBox={"0 0 24 24"} className="cursor-pointer" onClick={() => setIsOpen((prev) => !prev)}/>
       {isOpen && (
-        <div className="absolute bg-black top-20 right-0 w-full h-screen flex flex-col items-center justify-center gap-4 ml-auto text-white">
+        <div className="navlinks-wrapper absolute bg-black right-0 w-full flex flex-col items-center justify-center gap-4 ml-auto text-white">
           <NavLinks />
         </div>
       )}

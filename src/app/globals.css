@@ -12,6 +12,8 @@
   --max-width-container: 1200px;
   --side-padding: 25px;
   --side-padding-lg: 30px;
+  --navbar-height: 3rem;
+  --navbar-height-lg: 5rem;
 }
 
 .wrapper {
@@ -39,4 +41,16 @@
 
 .full-bleed {
   grid-column: 1 / -1;
+}
+
+.navbar {
+  height: var(--navbar-height);
+  @screen lg {
+    height: var(--navbar-height-lg);
+  }
+}
+
+.navlinks-wrapper {
+  top: var(--navbar-height);
+  height: calc(100vh - var(--navbar-height));
 }
