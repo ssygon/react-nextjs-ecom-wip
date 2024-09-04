@@ -1,6 +1,7 @@
 import Link from "next/link"
 import IconLogo from "@/app/icons/logo.svg";
 import Menu from "@/app/components/Menu/Menu";
+import NavLinks from "@/app/components/NavLinks/NavLinks";
 
 const NavBar = () => {
   return (
@@ -18,10 +19,7 @@ const NavBar = () => {
           <IconLogo width={120} height={38} />
         </Link>
         <div className="flex items-center gap-4 ml-auto">
-          <Link href="/">Homepage</Link>
-          <Link href="/list">Products</Link>
-          <Link href="/about">About</Link>
-          <Link href="/contact">Contact</Link>
+          <NavLinks />
         </div>
       </div>
     </div>
