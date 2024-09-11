@@ -51,7 +51,7 @@ const NavIcons = () => {
   return (
     <>
       <div className="flex items-center gap-4">
-        <Popover opened={isMyAccountOpen}>
+        <Popover opened={isMyAccountOpen} onChange={setIsMyAccountOpen}>
           <Popover.Target>
             <Link href="/login" onClick={handleMyAccountClick}>
               <IconMyAccount width={24} height={24} viewBox={"0 0 32 32"} className="mt-[1px] cursor-pointer" />
