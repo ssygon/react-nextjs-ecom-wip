@@ -7,9 +7,9 @@ import Link from "next/link";
 
 import IconMyAccount from "@/app/icons/my-account.svg";
 import IconShoppingBag from "@/app/icons/shopping-bag.svg";
+import CartPopover from "@/app/components/CartPopover/CartPopover";
 
 import { Popover } from '@mantine/core';
-
 
 const NavIcons = () => {
 
@@ -69,7 +69,20 @@ const NavIcons = () => {
           </Popover.Dropdown>
         </Popover>
         
-        <IconShoppingBag width={26} height={26} viewBox={"0 0 20 20"} className="mt-[-2px] cursor-pointer" onClick={handleShoppingBagClick}/>
+        <Popover opened={isShoppingBagOpen} onChange={setIsShoppingBagOpen}>
+          <Popover.Target>
+            <div className="relative cursor-pointer">
+              <IconShoppingBag width={26} height={26} viewBox={"0 0 20 20"} className="mt-[-2px]" onClick={handleShoppingBagClick}/>
+              <div className="absolute top-[-10px] right-[-10px] bg-red-500 rounded-full w-5 h-5 text-white text-xs flex items-center justify-center">
+              2
+            </div>
+          </div>
+          </Popover.Target>
+          <Popover.Dropdown>
+            <CartPopover />
+          </Popover.Dropdown>
+        </Popover>
+        
       </div>
     </>
   );
