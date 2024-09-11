@@ -12,7 +12,7 @@ const NavBar = () => {
       {/* MOBILE */}
       <div className="h-full flex items-center justify-between lg:hidden">
         <Link href="/">
-          <IconLogo width={120} height={38} />
+          <IconLogo width={80} height={25} />
         </Link>
         <Menu />
       </div>

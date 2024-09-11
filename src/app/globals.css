@@ -1,3 +1,4 @@
+/* Tailwind CSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,12 +9,20 @@
   }
 }
 
+/* base */
+@import '@/app/base.css';
+
+/* Mantine UI */
+@import '@/app/mantine-globals.css';
+
+
+/* Custom CSS */
 :root {
   --max-width-container: 1200px;
   --side-padding: 25px;
   --side-padding-lg: 30px;
-  --navbar-height: 3rem;
-  --navbar-height-lg: 5rem;
+  --navbar-height: 62px;
+  --navbar-height-lg: 80px;
 }
 
 .wrapper {

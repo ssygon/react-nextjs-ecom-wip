@@ -1,4 +1,5 @@
-.mobile-navlinks-wrapper {
-  top: var(--navbar-height);
-  height: calc(100vh - var(--navbar-height));
+.mantine-Drawer-root {
+  & .mantine-Drawer-header {
+    height: var(--navbar-height);
+  }
 }

@@ -1,3 +1,10 @@
+import '@mantine/core/styles.css';
+import { createTheme, MantineProvider } from '@mantine/core';
+
+const theme = createTheme({
+  /* Put your mantine theme override here */
+});
+
 import type { Metadata } from "next";
 import "./globals.css";
 import NavBar from "@/app/components/NavBar/NavBar";
@@ -14,8 +21,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+
     <html lang="en">
       <body>
+        <MantineProvider theme={theme}>
         <div className="wrapper">
           <header>
             <NavBar />
@@ -27,6 +36,7 @@ export default function RootLayout({
             <Footer />
           </footer>
         </div>
+        </MantineProvider>
       </body>
     </html>
   );
