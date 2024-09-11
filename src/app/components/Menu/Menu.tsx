@@ -3,6 +3,7 @@
 import { useState } from "react";
 import IconMenu from "@/app/icons/menu.svg";
 import NavLinks from "@/app/components/NavLinks/NavLinks";
+import "./style.css";
 
 const Menu = () => {
 
@@ -12,7 +13,7 @@ const Menu = () => {
     <>
       <IconMenu width={30} height={30} viewBox={"0 0 24 24"} className="cursor-pointer" onClick={() => setIsOpen((prev) => !prev)}/>
       {isOpen && (
-        <div className="navlinks-wrapper absolute bg-black right-0 w-full flex flex-col items-center justify-center gap-4 ml-auto text-white">
+        <div className="mobile-navlinks-wrapper absolute bg-black right-0 w-full flex flex-col items-center justify-center gap-4 ml-auto text-white">
           <NavLinks />
         </div>
       )}

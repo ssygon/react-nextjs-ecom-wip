@@ -1,0 +1,6 @@
+.navbar {
+  height: var(--navbar-height);
+  @screen lg {
+    height: var(--navbar-height-lg);
+  }
+}

@@ -43,14 +43,3 @@
   grid-column: 1 / -1;
 }
 
-.navbar {
-  height: var(--navbar-height);
-  @screen lg {
-    height: var(--navbar-height-lg);
-  }
-}
-
-.navlinks-wrapper {
-  top: var(--navbar-height);
-  height: calc(100vh - var(--navbar-height));
-}

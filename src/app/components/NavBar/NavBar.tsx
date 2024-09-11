@@ -2,8 +2,9 @@ import Link from "next/link"
 import IconLogo from "@/app/icons/logo.svg";
 import Menu from "@/app/components/Menu/Menu";
 import NavLinks from "@/app/components/NavLinks/NavLinks";
-import SearchBar from "../SearchBar/SearchBar";
-import NavIcons from "../NavIcons/NavIcons";
+import SearchBar from "@/app/components/SearchBar/SearchBar";
+import NavIcons from "@/app/components/NavIcons/NavIcons";
+import "./style.css";
 
 const NavBar = () => {
   return (

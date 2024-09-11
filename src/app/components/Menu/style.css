@@ -1,0 +1,4 @@
+.mobile-navlinks-wrapper {
+  top: var(--navbar-height);
+  height: calc(100vh - var(--navbar-height));
+}
