@@ -41,7 +41,7 @@ button.btn-primary {
   @screen lg {
     grid-template-columns:
     1fr
-    min(calc(100% - 2 *var(--side-padding-lg)), 100%)
+    min(calc(100% - 2 * var(--side-padding-lg)), 100%)
     1fr;
   }
 
@@ -56,5 +56,6 @@ button.btn-primary {
 
 .full-bleed {
   grid-column: 1 / -1;
+  max-width: none;
 }
 
