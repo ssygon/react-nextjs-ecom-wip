@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const NavLinks = () => {
   return (
-    <nav>
+    <nav aria-label="Main Navigation">
       <ul className="flex flex-col lg:flex-row gap-4">
         <li><Link href="/">Homepage</Link></li>
         <li><Link href="/list">Products</Link></li>
